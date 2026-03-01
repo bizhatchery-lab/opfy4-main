@@ -253,6 +253,7 @@ export const SERVICES: Service[] = [
     // Legacy fields
     icon: Zap,
     description: 'Grow your online presence with strategic digital marketing solutions tailored for your business.',
+    features: ['SEO Optimization', 'Paid Advertising', 'Social Media Management', 'Content Strategy', 'Lead Nurturing', 'Analytics & Reporting'],
     whatsappText: 'I\'m interested in Digital Marketing services. Can you help me grow my online presence?',
     imageUrl: 'https://images.pexels.com/photos/15635241/pexels-photo-15635241.jpeg?w=600&h=400&fit=crop',
   },
@@ -400,6 +401,7 @@ export const SERVICES: Service[] = [
     // Legacy fields
     icon: Globe,
     description: 'Custom web applications built with cutting-edge technology to drive your business forward.',
+    features: ['Responsive Design', 'Fast Performance', 'Mobile Optimized', 'E-commerce Ready', 'API Integration', 'Ongoing Support'],
     whatsappText: 'I\'m interested in Web Development services. Can you help me build a website?',
     imageUrl: 'https://images.pexels.com/photos/159299/graphic-design-studio-tracfone-programming-html-159299.jpeg?w=600&h=400&fit=crop',
   },
@@ -538,6 +540,7 @@ export const SERVICES: Service[] = [
     // Legacy fields
     icon: Building2,
     description: 'Streamline your business registration process with expert guidance and support.',
+    features: ['Company Registration', 'GST Compliance', 'MSME Benefits', 'Legal Documentation', 'Government Filing', 'Compliance Calendar'],
     whatsappText: 'I\'m interested in Business Registration services. Can you help me register my business?',
     imageUrl: 'https://images.pexels.com/photos/9064715/pexels-photo-9064715.jpeg?w=600&h=400&fit=crop',
   },
@@ -675,6 +678,7 @@ export const SERVICES: Service[] = [
     // Legacy fields
     icon: Calculator,
     description: 'Expert accounting and tax services to keep your finances in order and compliant.',
+    features: ['Bookkeeping', 'Tax Filing', 'GST Compliance', 'Financial Reporting', 'Audit Support', 'Tax Optimization'],
     whatsappText: 'I\'m interested in Accounting & Taxation services. Can you help with my finances?',
     imageUrl: 'https://images.pexels.com/photos/8439748/pexels-photo-8439748.jpeg?w=600&h=400&fit=crop',
   },
@@ -818,6 +822,7 @@ export const SERVICES: Service[] = [
     // Legacy fields
     icon: Banknote,
     description: 'Access financial solutions and loan assistance tailored to your business needs.',
+    features: ['Business Loans', 'Personal Loans', 'Credit Solutions', 'Loan Structuring', 'Fast Approvals', 'Competitive Rates'],
     whatsappText: 'I\'m interested in Finance & Loan services. Can you help me with financing options?',
     imageUrl: 'https://images.pexels.com/photos/7414208/pexels-photo-7414208.jpeg?w=600&h=400&fit=crop',
   },

@@ -221,14 +221,16 @@ export default function Index() {
                     </p>
 
                     {/* Features - Desktop only, compact spacing */}
-                    <ul className="space-y-1.5 mb-3 md:mb-4 hidden md:flex md:flex-col flex-shrink-0">
-                      {service.features.slice(0, 3).map((feature, idx) => (
-                        <li key={idx} className="text-xs text-brand-text-soft flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-brand-secondary flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {service.features && (
+                      <ul className="space-y-1.5 mb-3 md:mb-4 hidden md:flex md:flex-col flex-shrink-0">
+                        {service.features.slice(0, 3).map((feature, idx) => (
+                          <li key={idx} className="text-xs text-brand-text-soft flex items-start gap-1.5">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-secondary flex-shrink-0 mt-0.5" />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
 
                     {/* CTA Button - Compact */}
                     <button className="w-full px-3 py-2 bg-gray-100 text-brand-primary border-2 border-gray-300 rounded-lg hover:bg-brand-primary hover:text-white hover:border-brand-primary transition-all duration-200 font-medium text-xs group-hover:shadow-md flex items-center justify-center gap-1.5 flex-shrink-0">
