@@ -215,6 +215,39 @@
     }
   }
 
+  /* Float animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Gradient shift animation */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Shimmer animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
   /* Respect prefers-reduced-motion setting */
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -386,5 +419,96 @@
   .inquiry-form-container.dynamic-glow::before,
   .contact-form-wrapper.dynamic-glow::before {
     display: none !important;
+  }
+
+  /* Float animation utility */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Gradient background animations */
+  .gradient-animate {
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* Card hover lift effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  /* Smooth color transition */
+  .color-transition {
+    @apply transition-colors duration-500;
+  }
+
+  /* Gradient text utilities */
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent;
+  }
+
+  .gradient-text-secondary {
+    @apply bg-gradient-to-r from-brand-secondary to-brand-accent bg-clip-text text-transparent;
+  }
+
+  /* Background gradient utilities */
+  .bg-gradient-brand {
+    @apply bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10;
+  }
+
+  .bg-gradient-accent {
+    @apply bg-gradient-to-br from-brand-accent/10 to-orange-50;
+  }
+
+  /* Enhanced service card styles */
+  .service-card-enhanced {
+    @apply relative overflow-hidden rounded-2xl border-2 border-gray-100 bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary/30;
+  }
+
+  /* Glass morphism effect */
+  .glass-effect {
+    @apply bg-white/50 backdrop-blur-xl border border-white/20;
+  }
+
+  /* Gradient border animation */
+  .gradient-border {
+    @apply relative;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, var(--accent-color, #f59e0b), var(--primary-color, #2563eb)) border-box;
+  }
+
+  /* Better focus states for interactive elements */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition-all;
+  }
+
+  /* Improved card shadow variants */
+  .shadow-sm-brand {
+    @apply shadow-sm;
+  }
+
+  .shadow-md-brand {
+    @apply shadow-md;
+  }
+
+  .shadow-lg-brand {
+    @apply shadow-lg;
+  }
+
+  /* Section divider with gradient */
+  .section-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-brand-divider to-transparent;
   }
 }
